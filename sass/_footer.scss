@@ -1,0 +1,153 @@
+footer{
+	margin: 60px auto 0;
+	padding: 0 40px;
+	border-top: 5px solid #537EA9;
+	border-top: 5px solid rgba(51,102,153,0.8);
+	background: #D6E0EA;
+	background: rgba(51,102,153,0.2);
+
+	position: relative;
+		&:after{
+			content: "";
+			display: block;
+			position: absolute;
+			height: 0px;
+			width:0px;
+			border-color: #fff  transparent transparent;
+			border-style: solid;
+			border-width: 25px;
+			top: -15px;
+			left: 48%;
+		}
+
+	h5{
+		border-bottom: 1px solid #fff;
+		font: 20px/1.4em "Tw Cen MT";
+		margin: 10px 0 0px;
+	}
+	a{
+		text-decoration: none;
+		border-bottom: 1px dotted;
+		color: #369;
+		&:hover{
+			border-bottom: 2px solid;
+		}
+	}
+	p{
+		margin-top: 5px;
+		font: 0.8em/1.4em sans-serif;
+	}
+
+	.column{
+		width: 23%;
+		display: table-cell;
+		padding: 0 8px;
+		@media (max-width: 860px){
+			display: inline-table;
+			width: 49%;
+			height: 100%;
+			vertical-align: top;
+			font-size: 18px;
+		}
+		@media (max-width: 730px){
+			display: inline-block;
+			margin: 10px auto 0;
+			width: 100%;
+			&:after{
+				content: "\2015 \2605 \2015";
+				display: inline-block;
+				height: 20px;
+				width: 20px;
+				margin: 0 50%;
+				color: lighten(#D6E0EA,5%);
+				@include text-shadow(0 -1px 1px lighten(#D6E0EA, 1%));
+			}
+		}
+
+	}
+	.ventures{
+		a{
+			display: block;
+			height: 40px;
+			@extend .ir;
+			margin: 5px 0;
+			@include border-radius(4px);
+			@include box-shadow(0 0 2px #bbb, 0 0 0 1px #888 inset);
+			&:hover{
+				@include box-shadow(0 0 2px #0f0f0f);
+			}
+		}
+		.mst{
+			background: url("img/MST-Logo_Nontransparent.png") 50% 50% no-repeat #fff;
+			transition:all .5s;
+		}
+		.sc{
+			background: url() no-repeat;
+		}
+		.jzsm{
+			background: url() no-repeat;
+		}
+	}
+	.socialSites{
+		ul{
+			list-style: none;
+			padding: 0; margin:0;
+			li{
+				display: inline-block;
+				width: 49%;
+				margin: 2px 0;
+				@media (max-width: 999px){
+					width: 98%;
+				}
+				@media (max-width: 860px){
+					width:49%;
+				}
+				@media (max-width: 815px){
+					width: 48%;
+					a{
+						padding: 10px;
+						display: block;
+					}
+				}
+			}
+		}		
+	}
+	.friends{
+		ul{
+			list-style: none;
+			margin:0; padding:0;
+			li{
+				width: 49%;
+				float: left;
+				@media (max-width: 999px){
+					width: 98%;
+				}
+				@media (max-width: 815px){
+					a{
+						padding: 10px;
+						display:block;
+
+					}
+				}
+			}
+		}
+	}
+	.credits{
+		font: 12px/30px sans-serif;
+		height: 30px;
+		.powered{
+			display: inline-block;
+			@media (max-width:795px){
+				display: none;
+			}
+		}
+		.copyleft{
+			display:inline-block;
+			float: right;
+			@media (max-width:800px){
+				float: left;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,42 @@
+.alignleft, img.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright, img.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter, img.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wp-caption {
+    background: #E7E7E7;
+    margin-bottom: 1.5em;
+    padding-top: 5px;
+    text-align: center;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.wp-caption img {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+}
+.wp-caption a, .wp-caption a:hover{
+    border:0 none;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 12px;
+    line-height: 2;
+    margin: 0;
+}
+
+@import "_wordpress-comments.scss";
