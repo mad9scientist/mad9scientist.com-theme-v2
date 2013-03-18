@@ -1,0 +1,40 @@
+.button{
+	border: 0 none;
+	background: #369;
+	color: #fff;
+	padding: 8px 20px;
+	margin: 8px 0;
+	@include border-radius(5px);
+	@include box-shadow(0 0 2px #1f1f1f);
+
+	&:hover{
+		background: lighten(#369, 15%);
+		@include box-shadow(0 1px 1px #fff inset);
+		@include text-shadow(0 1px 0px #000);
+	}
+}
+textarea{
+	border: 1px solid #369;
+	@include border-radius(3px);
+	padding: 5px;
+	color: #1f1f1f;
+}
+
+pre{
+	background: #252525;
+	@include border-radius(8px);
+	code{
+		color: #A9D3FF;
+	}
+	&:after{
+		content: "Powered by Prism.js";
+		float: right;
+		font: 10px/1.0em sans-serif;
+		margin: auto 15px 10px;
+	}
+}
+
+#searchform{
+	text-align: center;
+	margin: 50px 0 20px;
+}
