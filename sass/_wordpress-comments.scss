@@ -29,8 +29,9 @@
 	}
 
 	.commentlist{
-		list-style: none;
+		list-style: none none;
 		padding:0;
+		.children{list-style: none;}
 
 		.comment{
 			-moz-border-radius: 5px;
@@ -73,7 +74,7 @@
 			background: #A9CEEF;
 		}
 		
-		.avatar{
+		div.avatar{
 			float: left;
 			padding: 5px;
 			@media (max-width:450px){
@@ -99,6 +100,7 @@
 		.commentbody{
 			margin-left: 105px;
 			display: block;
+			position: relative;
 			@media (max-width:450px){
 				margin:0;
 			}
@@ -109,9 +111,60 @@
 					border-bottom: 1px dotted;
 				}
 			}
-
+			.feature-burry-comments{display:none;}
+			.comment-reply-link{
+				@include border-radius(3px);
+				background: #F4F9FD;
+				display: inline-block;
+				padding: 8px 25px;
+				&:hover{
+					border: 0 none;
+					background: rgba(255,255,255,0.4);
+				}
+			}
 		}
 	}
+	#respond{
+		#comment{
+			width: 100%;
+		}
+		.labelgroups{
+			width: 32.8%;
+			margin: 20px auto 0;
+			display: inline-block;
+			@media (max-width:720px){
+				display: block;
+				width: 100%;
+			}
+			label{
+				display:block;
+				.required{
+					color: red;
+				}
+			}
+			input[type=text]{
+				width: 100%;
+			}
+		}
+		.notice{
+			font-style: italic;
+			.captcha{
+				@extend .hidden;
+			}
+		}
+		.postComment{
+			text-align: right;
+		}
+	}
+	.end-of-discussion{
+		@include border-radius(3px);
+		border: 2px double;
+		font: 1.3em/1.3em sans-serif;
+		text-align: center;
+	}
+
+
+
 
 	.commentlist .reply {}
 	.commentlist .reply a {}

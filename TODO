@@ -1,0 +1,61 @@
+# Homepage/Feed
+
+Create function to pull more stories/links to page from the pagination
+AKA get "More Article" Link working
+
+# Comments
+
+Fix reply to be ajax like normal
+
+# WordPress
+
+Get New SEO Plugin working
+
+Setup New Post Type for :
+
+* Links Post
+* Projects
+	* Development project, concepts and apps
+
+* Portfolio
+	* Client Work and other things
+
+Style and setup archive
+* Stuff I Wrote
+
+Get Portfolio Setup
+Get Project Directory Setup
+
+Clean up Header Junk
+
+Finish Page and Single Page Template
+
+* No Comment Page
+* Redirect Template Body of page is link and that page just redirect to new address
+
+# Page TODO
+
+* Write Job page
+* Create Social Media Link Pages
+	- Create a Template for future use
+
+# Pre Launch Checklist
+
+* Update Local Database to Current Version
+* Test Current Content
+* Post Test Content
+	* Link Post
+	* "Article" Post
+	* Project Item
+	* Portfolio Item
+* Fix Bugs
+* Minify JS/CSS/Images
+* Git Push to BitBucket/GitHub
+* Setup Git Pull to Server
+* Deploy to Server
+* Test Theme in Theme Split (Plugin Function)
+* Create/Move Content to New Post Types (if needed)
+* Deploy Theme Publicly
+* Kill Theme Switcher Plugin
+* Check for New Bugs/Fix/Push/Deploy
+* Write Announcement

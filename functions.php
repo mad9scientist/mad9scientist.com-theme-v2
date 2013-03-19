@@ -63,8 +63,9 @@
 	 */
 
 	function starkers_script_enqueuer() {
-		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
-        wp_enqueue_style( 'screen' );
+		wp_register_script('modernizr', get_stylesheet_directory_uri().'/js/vendor/modernizr.min.js');
+        wp_enqueue_script('modernizr');
+
 	}	
 
 	/* ========================================================================================================================
@@ -79,17 +80,33 @@
 	 * @return void
 	 * @author Keir Whitaker
 	 */
+	
 	function starkers_comment( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment; 
 		?>
 		<?php if ( $comment->comment_approved == '1' ): ?>	
-		<li>
-			<article id="comment-<?php comment_ID() ?>">
-				<?php echo get_avatar( $comment ); ?>
-				<h4><?php comment_author_link() ?></h4>
-				<time><a href="#comment-<?php comment_ID() ?>" pubdate><?php comment_date() ?> at <?php comment_time() ?></a></time>
-				<?php comment_text() ?>
-			</article>
+		<li <?php comment_class(); ?>>
+			<div id="comment-<?php comment_ID() ?>">
+				<div class="avatar">
+					<?php echo get_avatar( $comment, 80 ); ?>					
+				</div>
+				<div class="commentbody">
+					<div class="vcard">
+						<div class="commentauthor"><?php comment_author_link() ?></div>
+						<div class="commentmetadata">
+							<time><a href="#comment-<?php comment_ID() ?>" pubdate><?php comment_date('F j, Y') ?></a></time>
+						</div>
+					</div>
+					<div class="commentcontent">
+						<?php comment_text() ?>						
+					</div>
+					<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+				</div>
+			</div>
+			<div class="comment-controls">
+				 <?php comment_reply_link(get_comment_ID()); ?> 
+				 <?php m9s_comment_control_links(get_comment_ID()); ?> 
+			</div>
 		<?php endif;
 	}
 

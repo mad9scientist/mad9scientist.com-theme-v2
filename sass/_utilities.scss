@@ -67,6 +67,10 @@ hr{
     visibility: hidden;
 }
 
+.clear{
+    clear: both;
+}
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -109,10 +113,3 @@ hr{
 // YouTube is planning to drop support for IE 7
 
 // IE 8
-.lt-ie9 .siteID nav{
-    bottom: -20px;
-    float: none;
-    li{
-        margin: auto 3px;
-    }
-}
