@@ -39,4 +39,12 @@
     margin: 0;
 }
 
+.search-results{
+    ol{
+        h2{
+            border-bottom: 0 none;
+        }
+    }
+}
+
 @import "_wordpress-comments.scss";

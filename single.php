@@ -18,7 +18,7 @@
 	<header>
 		<h1><?php the_title(); ?></h1>
 		<p class="metadata">
-			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?></time>			
+			<time datetime="<?php the_time('c'); ?>" pubdate><?php the_date('F j, Y'); ?></time>			
 		</p>		
 	</header>
 
