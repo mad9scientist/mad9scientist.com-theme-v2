@@ -8,6 +8,18 @@
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
+
+	global $query_string;
+
+	$query_args = explode("&", $query_string);
+	$search_query = array();
+
+	foreach($query_args as $key => $string) {
+		$query_split = explode("=", $string);
+		$search_query[$query_split[0]] = urldecode($query_split[1]);
+	} // foreach
+
+	$search = new WP_Query($search_query);
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 <div class="article-wrap">
@@ -37,11 +49,12 @@
 	</li>
 <?php endwhile; ?>
 </ol>
-<?php echo paginate_links() ?>
+<div class="pagination">
+	<?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
+	<?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
+</div>
 <?php else: ?>
 <h2>No results found for '<?php echo get_search_query(); ?>'</h2>
-<?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
-<?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
 <?php endif; ?>
 </div>
 

@@ -45,6 +45,19 @@
             border-bottom: 0 none;
         }
     }
+    .pagination{
+        text-align: center;
+        a{
+            border: 0 none;
+        }
+        .button{
+            @extend .button;
+            width: 30%;
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+    }
 }
 
 @import "_wordpress-comments.scss";
