@@ -103,10 +103,12 @@
 					<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 				</div>
 			</div>
+			<?php global $user_ID; if( $user_ID ) : if(current_user_can('level_10')) : ?>
 			<div class="comment-controls">
 				 <?php comment_reply_link(get_comment_ID()); ?> 
 				 <?php m9s_comment_control_links(get_comment_ID()); ?> 
 			</div>
+			<?php endif; endif;?>
 		<?php endif;
 	}
 
