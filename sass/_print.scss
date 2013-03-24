@@ -1,3 +1,20 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/*
+	Print Styles
+*/
+
+// Things to Hide
+footer .column, header nav, .hireMe, .socialmedia, #comments, #showComments, .Intro, .powered, .copyleft a{
+	display: none;
+}
+.logo{
+	font: 3.0em/2.5em "Century Gothic", Gotham, sans-serif;
+	font: 3.8em/1.5em "Tw Cen MT";
+	text-decoration: none;
+	color: #000;
+	.tagline{
+		font: .25em/0em "Century Gothic", Gotham, sans-serif;
+		font: .3em/0em "Tw Cen MT";
+		display: block;
+		margin: -8px auto 0 9em;
+	}
+}
