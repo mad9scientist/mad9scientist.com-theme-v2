@@ -3,17 +3,11 @@
 Create function to pull more stories/links to page from the pagination
 AKA get "More Article" Link working
 
-# Comments
 
-DONE | Fix reply to be ajax like normal - Wasn't Ajax
+#Setup New Post Type for :
 
-# WordPress
-
-Get New SEO Plugin working - Yoast's SEO Plugin - Currently Experimenting
-
-Setup New Post Type for :
-
-* Links Post
+* Links Post, current setup as a page template
+	Change to Custom Post Type
 * Projects
 	* Development project, concepts and apps
 
@@ -26,12 +20,6 @@ Style and setup archive
 Get Portfolio Setup
 Get Project Directory Setup
 
-Clean up Header Junk
-
-DONE | Finish Page and Single Page Template
-
-* DONE | No Comment Page
-* DONE | Redirect Template Body of page is link and that page just redirect to new address
 
 # Page TODO
 
@@ -59,3 +47,22 @@ DONE | Finish Page and Single Page Template
 * Kill Theme Switcher Plugin
 * Check for New Bugs/Fix/Push/Deploy
 * Write Announcement
+
+
+
+## Completed
+
+### Comments
+
+DONE | Fix reply to be ajax like normal - Wasn't Ajax
+
+### WordPress
+
+Get New SEO Plugin working - Yoast's SEO Plugin - Currently Experimenting
+
+DONE | Finish Page and Single Page Template
+
+* DONE | No Comment Page
+* DONE | Redirect Template Body of page is link and that page just redirect to new address
+
+DONE | Clean up Header Junk
