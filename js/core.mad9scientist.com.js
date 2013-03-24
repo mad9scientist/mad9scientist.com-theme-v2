@@ -55,13 +55,23 @@ $(".controller").click(function(){
 
 // Toggle Comments/Repond Content on Article Pages
 var commentSection = $("#comments");
+var commentURL = $(location).attr('hash');
 
-$(commentSection).before("<button id='showComments' class='button'>Show Comments</button>")
-
-$("#comments").hide();
+//if(commentURL != "#respond" || commentURL.match('#comment-')){
+if(commentURL === ""){
+	$(commentSection).before("<button id='showComments' class='button'>Show Comments</button>")
+	$("#comments").hide();
+}
 $("#showComments").click(function(){
 	$("#comments").slideDown(200);
 	$("#showComments").detach();
+});
+
+// Convenient Commenting (Ctrl+Enter) Submit Comment
+$('#comment').keydown(function (e) {
+  if (e.ctrlKey && e.keyCode == 13) {
+    $("#submit").click();
+  }
 });
 
 // Hide No Javascript Alert
