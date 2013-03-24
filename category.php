@@ -24,8 +24,14 @@
 	</li>
 <?php endwhile; ?>
 </ol>
+
+<div class="pagination">
+	<?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
+	<?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
+</div>
+
 <?php else: ?>
-<h2>No posts to display in <?php echo single_cat_title( '', false ); ?></h2>
+<h2>No items to display in <?php echo single_cat_title( '', false ); ?> category archive.</h2>
 <?php endif; ?>
 </div>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
