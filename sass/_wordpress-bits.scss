@@ -59,5 +59,41 @@
         }
     }
 }
+.author{
+    h1{
+        position: relative; 
+        span{
+            font: 12px/1.3em sans-serif;
+            position: absolute;
+            right: 3px;
+            bottom: 3px;
+            &:before{content:"(";}
+            &:after{content:")";}
+        }
+    }
+    ol{
+        list-style: none;
+        padding: 0;
+    }
+    .aboutAuthor{
+        background: #D6E0EA;
+        @include border-radius(4px);
+        @include box-shadow(0 0 3px #369);
+        padding: 15px;
+        overflow: auto;
+        .avatar{
+            @include border-radius(10px);
+            @include box-shadow(0 0 3px #369);
+            float: left;
+            margin-right: 20px;
+        }
+        .bio{
+            h3{
+                margin: 0 auto 18px;
+            }
+            margin: auto;
+        }
+    }
+}
 
 @import "_wordpress-comments.scss";
