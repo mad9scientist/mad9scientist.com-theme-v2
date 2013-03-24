@@ -41,6 +41,8 @@
 
 .search-results, .archive{
     ol{
+        list-style: none;
+        padding: 0;
         h2{
             border-bottom: 0 none;
         }

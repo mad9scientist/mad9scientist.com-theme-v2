@@ -19,13 +19,13 @@
 <?php if ( have_posts() ): ?>
 
 <?php if ( is_day() ) : ?>
-<h2>Archived items for, <?php echo  get_the_date( 'F j, Y' ); ?></h2>							
+<h1>Archived items for, <?php echo  get_the_date( 'F j, Y' ); ?></h1>							
 <?php elseif ( is_month() ) : ?>
-<h2>Archived items for, <?php echo  get_the_date( 'F Y' ); ?></h2>	
+<h1>Archived items for, <?php echo  get_the_date( 'F Y' ); ?></h1>	
 <?php elseif ( is_year() ) : ?>
-<h2>Archived items for, <?php echo  get_the_date( 'Y' ); ?></h2>								
+<h1><?php echo  get_the_date( 'Y' ); ?> - Archived items</h1>								
 <?php else : ?>
-<h2>Archive</h2>	
+<h1>Archive</h1>	
 <?php endif; ?>
 
 <ol>
