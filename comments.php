@@ -44,10 +44,12 @@
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
 	
-	<p class="end-of-discussion">Comments are closed</p>
+	<p class="end-of-discussion">Comments are closed. Have something to add? <a href="/contact/">Message me</a>.</p>
 	
 	<?php endif; ?>
 
+
+<?php if ( comments_open() ) : ?>
 	<div id="respond">
 
 	<h3><?php comment_form_title( 'Join the Discussion', 'Reply to %s' ); ?></h3>
@@ -100,6 +102,7 @@
 	</form>
 
 	<?php endif; // If registration required and not logged in ?>
+<?php endif; // Send Comment Field if Comments are open  ?>	
 
 </div>
 

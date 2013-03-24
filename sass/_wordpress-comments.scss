@@ -158,9 +158,20 @@
 	}
 	.end-of-discussion{
 		@include border-radius(3px);
-		border: 2px double;
-		font: 1.3em/1.3em sans-serif;
+		border: 2px double #537EA9;
+		font: italic 1.3em/1.5em "Tw Cen MT", "Century Gothic", Gotham, sans-serif;
+		padding: 5px;
 		text-align: center;
+		background: #D6E0EA;
+		a{
+			border-bottom: 1px dotted;
+			color: #0076C4;
+			text-decoration: none;
+			transition: all 0.25s;
+			&:hover{
+				border-bottom: 2px solid;
+			}
+		}
 	}
 
 
