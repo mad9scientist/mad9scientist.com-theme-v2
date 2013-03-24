@@ -10,9 +10,9 @@
  */
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
-
+<div class="article-wrap">
 <?php if ( have_posts() ): ?>
-<h2>Category Archive: <?php echo single_cat_title( '', false ); ?></h2>
+<h2><?php echo single_cat_title( '', false ); ?> Category Archives</h2>
 <ol>
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>
@@ -27,5 +27,5 @@
 <?php else: ?>
 <h2>No posts to display in <?php echo single_cat_title( '', false ); ?></h2>
 <?php endif; ?>
-
+</div>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
