@@ -10,7 +10,7 @@
  */
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
-<div class="article-wrap">
+<div class="article-wrap" role="main">
 <?php if ( have_posts() ): ?>
 <h2><?php echo single_cat_title( '', false ); ?> Category Archives</h2>
 <ol>

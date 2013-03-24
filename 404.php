@@ -11,7 +11,7 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="article-wrap">
+<div class="article-wrap" role="main">
 	<h1>Oh! No!</h1>
 	<h2>The Page You Are Looking Can Not Be Found :(</h2>
 

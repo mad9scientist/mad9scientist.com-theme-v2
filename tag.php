@@ -10,7 +10,7 @@
  */
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
-<div class="article-wrap">
+<div class="article-wrap" role="main">
 <?php if ( have_posts() ): ?>
 <h2><?php echo single_tag_title( '', false ); ?> Tag Archives</h2>
 <ol>

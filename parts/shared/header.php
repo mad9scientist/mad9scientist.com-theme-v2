@@ -4,7 +4,7 @@
 <![endif]-->
 <noscript><p id="js-required"class="no-js-plz">Really, you don't have JavaScript Active!? Please turn on JavaScript to fully experience this site.</p></noscript>
 
-<header class="siteID">
+<header class="siteID" role="banner">
 	<a href="/job/" class="hireMe" title="Hire me via Mad Scientist Technologies!">Need Help, Hire Me!</a>
 	<div class="socialmedia">
 		<a href="/like/" class="fb social ir">Facebook</a>
@@ -22,7 +22,7 @@
 				</svg>
 			</a>
 		</div>
-		<div class="menuContents">
+		<div class="menuContents" role="navigation">
 			<ul>
 				<li><a href="/blog/">Stuff I Wrote</a></li>
 				<li><a href="/portfolio/">My Work</a></li>
