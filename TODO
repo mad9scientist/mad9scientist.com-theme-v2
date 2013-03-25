@@ -6,19 +6,19 @@ AKA get "More Article" Link working
 
 #Setup New Post Type for :
 
-* Links Post, current setup as a page template
-	Change to Custom Post Type
-* Projects
-	* Development project, concepts and apps
+* Projects CPT
+	* Work on Single and Archive Pages - NEED STYLING
+	* Change Current Page solution to new CPT
+	* Change current directory setup for projects from 
+		mad9scientist.com/projects/%name% to concepts.mad9scientist.com/%name%
+		The current setup now will conflict with the new CPT
 
-* Portfolio
-	* Client Work and other things
+* Portfolio CPT
+	* Work on Single and Archive Pages - NEED STYLING
+
 
 Style and setup archive
 * Stuff I Wrote
-
-Get Portfolio Setup
-Get Project Directory Setup
 
 
 # Page TODO
@@ -66,3 +66,15 @@ DONE | Finish Page and Single Page Template
 * DONE | Redirect Template Body of page is link and that page just redirect to new address
 
 DONE | Clean up Header Junk
+
+* Links Post, current setup as a page template
+	Change to Custom Post Type | DONE
+
+Get Portfolio Setup | Done
+Get Project Directory Setup | DONE
+
+* Projects | Done
+	* Development project, concepts and apps - NEED STYLING
+
+* Portfolio | Done
+	* Client Work and other things
