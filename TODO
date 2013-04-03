@@ -1,9 +1,3 @@
-# Homepage/Feed
-
-Create function to pull more stories/links to page from the pagination
-AKA get "More Article" Link working
-
-
 #Setup New Post Type for :
 
 * Projects CPT
@@ -82,3 +76,9 @@ Get Project Directory Setup | DONE
 # Footer
 
 Setup Footer to pull in social links dynamicly from WP backend
+
+# Homepage/Feed
+
+Create function to pull more stories/links to page from the pagination
+AKA get "More Article" Link working
+- Created a Preminaraly Version
