@@ -63,7 +63,7 @@
 	 */
 
 	function starkers_script_enqueuer() {
-		wp_register_script('modernizr', get_stylesheet_directory_uri().'/js/vendor/modernizr.min.js');
+		wp_register_script('modernizr', get_stylesheet_directory_uri().'/js/vendor/modernizr.min.js',false,null);
         wp_enqueue_script('modernizr');
 
 	}	
