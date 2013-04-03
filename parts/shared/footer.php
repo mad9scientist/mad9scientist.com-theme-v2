@@ -13,26 +13,13 @@
 	<div class="socialSites column">
 		<h5>Other Digitally Homes</h5>
 		<ul>
-			<li><a href="#">CoderWall</a></li>
-			<li><a href="#">Delicious</a></li>
-			<li><a href="#">DeviantArt</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">GitHub</a></li>
-			<li><a href="#">Google+</a></li>
-			<li><a href="#">LinkedIn</a></li>
-			<li><a href="#">Stack Overflow</a></li>
-			<li><a href="#">Tumblr</a></li>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">YouTube</a></li>
+			<?php wp_list_bookmarks('category=3&title_li=&categorize=0'); ?>
 		</ul>
 	</div>
 	<div class="friends column">
 		<h5>Some of Great Places</h5>
 		<ul>
-			<li><a href="#">Ars Technica</a></li>
-			<li><a href="#">CSS-Tricks</a></li>
-			<li><a href="#">Digging into WordPress</a></li>
-			<li><a href="#">NetTuts+</a></li>
+			<?php wp_list_bookmarks('category=4&title_li=&categorize=0'); ?> 
 		</ul>
 	</div>
 	<div class="credits">
