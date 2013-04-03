@@ -32,24 +32,21 @@
 <?php endwhile; else: ?>
 <h2>No posts to display ;(</h2>
 <?php endif; ?>
+	<div id="nextpage"></div>
 
 	<div class="pagination">
-		<a href="">More Articles</a>
+		<?php 
+			global $wp_query;
 
-		<?php
-		// Normal Pagination 
-		/*
-		global $wp_query;
+			$big = 999999999; // need an unlikely integer
+			echo paginate_links( array(
+				'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+				'format' => '?paged=%#%',
+				'current' => max( 1, get_query_var('paged') ),
+				'total' => $wp_query->max_num_pages
+			) );
 
-		$big = 999999999; // need an unlikely integer
-		echo paginate_links( array(
-			'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-			'format' => '?paged=%#%',
-			'current' => max( 1, get_query_var('paged') ),
-			'total' => $wp_query->max_num_pages
-		) );*/
-		?>
-
+		 ?>			
 	</div>
 
 </section>

@@ -77,6 +77,47 @@ $('#comment').keydown(function (e) {
 // Hide No Javascript Alert
 $("#js-required").detach();
 
+// Load next page dynamically
+function loadPage(url){
+	var url, p, page, response, status, xhr
+
+	//url = window.location.pathname;
+	if(/page\/\d+/.test(url)){
+		page = parseInt(url.match(/\d+/)[0]);	
+		page = page + 1;
+	}
+	if(url === "/"){
+		page = 2;
+	}
+
+	if(page != undefined || url === "/"){
+		$("#nextpage").load('/page/'+page+'/ .feed article', function(response, status, xhr){
+			if(xhr.status != 404 && status === "error") {
+				$("<p class='pagination'>Error, I'm unable to load more articles. Please try again later.</p>").appendTo("#nextpage");	
+			} else if(xhr.status === 404){
+				$(".pagination").fadeOut();
+				$('<p class="pagination">No more articles to load :(</p>').appendTo("#nextpage");
+			}
+			if(url === "/"){
+				urlHistory = "page/"+page;
+			}else{
+				urlHistory = page;
+			}
+			history.pushState(history.state, null, urlHistory);;
+		});
+	}
+
+	
+}
+$(".pagination .page-numbers").detach();
+$("<a href=''>More Articles</a>").appendTo(".pagination");
+$(".pagination a").click(function(e){
+	e.preventDefault();
+	url = window.location.pathname;
+	loadPage(url);
+});
+
+
 
 
 /**
