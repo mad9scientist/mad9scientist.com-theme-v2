@@ -1,13 +1,13 @@
 ::-moz-selection {
     background: #369;
     color: #fff;
-    text-shadow: none;
+    text-shadow: 0 -1px 0 #000;
 }
 
 ::selection {
     background: #369;
     color: #fff;
-    text-shadow: none;
+    text-shadow: 0 -1px 0 #000
 }
 
 hr{

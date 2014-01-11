@@ -20,7 +20,7 @@
 <?php if ( have_posts() ): ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<article class="<?php echo get_post_type();  ?>">
+	<article class="<?php echo (has_post_format('link')) ?  "link" :  get_post_type() ?>">
 		<header>
 			<h2>
 				<a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
@@ -30,7 +30,7 @@
 		<?php the_content(); ?>
 	</article>
 <?php endwhile; else: ?>
-<h2>No posts to display ;(</h2>
+<h2>Um, This isn't right. There is nothing show!? ;(</h2>
 <?php endif; ?>
 	<div id="nextpage"></div>
 

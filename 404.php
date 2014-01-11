@@ -13,7 +13,7 @@
 
 <div class="article-wrap" role="main">
 	<h1>Oh! No!</h1>
-	<h2>The Page You Are Looking Can Not Be Found :(</h2>
+	<h2>The Page You Are Looking Could Not Be Found :(</h2>
 
 	<p>I'm Sorry. I Broke the Link, probably from all the changes over the years.</p>
 
