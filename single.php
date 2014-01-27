@@ -22,7 +22,11 @@
 		</p>		
 	</header>
 
-	<?php the_content(); ?>			
+	<?php the_content(); ?>
+
+	<?php if(has_post_format('link')){ ?>
+		<a href="<?php echo get_post_meta($post->ID, 'LinkFormatURL', true) ?>">Link to Article</a> &bull; <a href="<?php get_post_permalink();  ?>">Permalink</a>
+	<?php } ?>
 
 </article>
 	

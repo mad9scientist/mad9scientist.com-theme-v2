@@ -23,7 +23,7 @@
 	<article class="<?php echo (has_post_format('link')) ?  "link" :  get_post_type() ?>">
 		<header>
 			<h2>
-				<a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
+				<a href="<?php esc_url( the_permalink() ); ?>" <?php if(!has_post_format('link')) { ?> title="Permalink to <?php the_title() ?>" <?php } else { ?> title="Link off site to <?php the_title() ?>" <?php } ?> rel="bookmark"><?php the_title(); ?></a>
 			</h2>
 			<p class="metadata"><time datetime="<?php the_time('c'); ?>" pubdate><?php the_date('F j, Y'); ?></time> &bull; <a href="<?php esc_url( the_permalink() ); ?>">&infin;</a></p>
 		</header>
