@@ -1,0 +1,21 @@
+.gallery{
+
+	.gallery-item{
+		
+
+		.gallery-icon{
+			a{
+			background: #eee;
+			display: block;
+			margin: 0 0.3em 0.5em;
+			min-height: 175px;
+			padding: 0.5em;
+
+				img{
+					border: 0 none !important;
+				}
+			}
+		}
+	}
+
+}

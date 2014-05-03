@@ -1,0 +1,20 @@
+.featureThumb{
+	height: 175px;
+	width: 300px;
+	display: block;
+	padding: 0.7em;
+	@include box-shadow(0 0 2px 1px #0076C4);
+	border: 0 none;
+	background: #fff;
+	float: left;
+	margin: 0.4em 1em 0.8em 0;
+	overflow: hidden;
+	
+	&:hover, &:active{
+		border: 0 none;
+	}
+
+	img{
+	
+	}
+}

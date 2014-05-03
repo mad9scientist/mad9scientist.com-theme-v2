@@ -24,7 +24,7 @@ footer{
 
 	h5{
 		border-bottom: 1px solid #fff;
-		font: 20px/1.4em "Tw Cen MT";
+		font: 20px/1.4em "Tw Cen Mt","Futura","FuturaBT","Myriad Pro",Myriad,"PT Sans","Century Gothic",CenturyGothic,AppleGothic,"Helvetica Neue","Trebuchet MS",Arial,sans-serif;
 		margin: 10px 0 5px;
 	}
 	a{
@@ -37,7 +37,7 @@ footer{
 	}
 	p{
 		margin-top: 5px;
-		font: 0.85em/1.4em sans-serif;
+		font: 0.85em/1.4em "Open Sans",sans-serif;
 	}
 
 	.column{
@@ -135,8 +135,8 @@ footer{
 		}
 	}
 	.credits{
-		font: 12px/30px sans-serif;
-		height: 30px;
+		font: 13px/35px "Open Sans", sans-serif;
+		height: 35px;
 		.powered{
 			display: inline-block;
 			@media (max-width:795px){

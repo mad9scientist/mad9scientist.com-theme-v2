@@ -13,21 +13,40 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'part
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<article>
+		<?php 
+			if ( has_post_thumbnail() ) {
+				echo "<a href=\"" . get_permalink() ."\" class='featureThumb'>";
+					the_post_thumbnail('full');
+				echo "</a>";
+			}
+		?>
 		<h2>
 			<a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
-			<?php /*
-			<span class="metadata">
-				<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?></time>				
-			</span> */ ?>
 		</h2>
-		<?php the_excerpt(); ?>
+		<?php 
+			if(has_post_thumbnail()){
+				echo "<div class=\"project\">";
+			}
+			$projectType = get_post_custom($post->ID);
+
+			if($projectType['ProjectType'][0] !== null){
+				echo "<span class=\"project-type\">Project Type</span> <p>". $projectType['ProjectType'][0] ."</p>";
+			}
+			echo "<span class=\"project-description\">Project Description</span>";
+			the_excerpt(); 
+			if(has_post_thumbnail()){
+				echo "</div>";
+			}
+		?>
 	</article>
 <?php endwhile; ?>
 
+<?php if( next_posts_link() || previous_posts_link() ){ ?>
 <div class="pagination">
 	<?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
 	<?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
 </div>
+<?php } ?>
 
 <?php else: ?>
 <h2>Empty Archive</h2>	

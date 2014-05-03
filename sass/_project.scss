@@ -1,0 +1,54 @@
+body[class*=m9s_projects]{
+	.proj-img-spacer{
+		
+	}
+	.project-logo{
+		margin-right: 1.8em;
+		height: 150px;
+		float: left;
+	}
+	
+	.meta{
+		span{
+			&:after{
+				content: "\00A0\2022\00A0";
+			}
+			
+			&:nth-last-child(1):after{
+				content: " ";					
+			}			
+		}
+		.proj-home{}
+		.repo{
+			.github{
+				&:before{
+					content: "";
+					width: 32px;
+					height: 32px;
+					display: inline-block;
+					background: url(img/github-b.png) no-repeat;
+					vertical-align: bottom;
+				}
+			}
+			.bitbucket{
+				&:before{
+					content: "";
+					width: 32px;
+					height: 32px;
+					display: inline-block;
+					background: url(img/bitbucket-b.png) no-repeat;
+					vertical-align: bottom;
+				}
+			}
+		}
+		.demo{}
+		.license{}
+	}
+	article{
+		margin-bottom: 1.8em;
+		h2{
+			margin-top: 0.2em;
+		}
+		
+	}
+}

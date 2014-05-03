@@ -1,6 +1,7 @@
 .article-wrap{
 	width: 80%;
 	margin: 0 auto;
+	max-width: 1000px;
 	@media (max-width:945px){
 		width: 90%;
 	}

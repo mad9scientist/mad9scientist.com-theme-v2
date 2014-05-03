@@ -44,6 +44,13 @@
 
 // WordPress Bits
 @import '_wordpress-bits.scss';
+@import '_gallery.scss';
+@import '_lightbox.scss';
+
+@import '_portfolio.scss';
+@import '_project.scss';
+@import '_images.scss';
+@import '_mysetup.scss';
 
 // Code Highlighter - Prismjs.com
 @import '_prism.scss';

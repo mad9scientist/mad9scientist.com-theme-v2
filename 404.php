@@ -13,11 +13,11 @@
 
 <div class="article-wrap" role="main">
 	<h1>Oh! No!</h1>
-	<h2>The Page You Are Looking Could Not Be Found :(</h2>
+	<h2>The Page You Are Looking For, Could Not Be Found :(</h2>
 
 	<p>I'm Sorry. I Broke the Link, probably from all the changes over the years.</p>
 
-	<p>You could search the site below, or <a href="/contact/">shoot me a message</a> and I will see if I can find what you were looking.</p>
+	<p>You could search the site below, or <a href="/contact/">shoot me a message</a> and I will see if I can find what you were looking for...</p>
 
 	<?php get_search_form(); ?>
 

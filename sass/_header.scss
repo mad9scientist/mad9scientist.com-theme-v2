@@ -17,7 +17,7 @@
 			border-style: solid;
 			border-width: 25px;
 			bottom: -13px;
-			left: 50%;
+			left: 48%;
 			@media (max-width:1270px){display:none;}
 			@media (max-width:785px){display:block;}
 			@media (max-width:430px){display:none;}
@@ -32,7 +32,7 @@
 	}
 
 	.logo{
-		font: 3.0em/2.5em "Century Gothic", Gotham, sans-serif;
+		font: 3.0em/2.5em "Futura","FuturaBT","Myriad Pro",Myriad,"PT Sans","Century Gothic",CenturyGothic,AppleGothic,"Helvetica Neue","Trebuchet MS",Arial,sans-serif;
 		font: 3.8em/1.5em "Tw Cen MT";
 		text-decoration: none;
 		color: #efefef;
@@ -57,7 +57,7 @@
 		}
 
 		.tagline{
-			font: .25em/0em "Century Gothic", Gotham, sans-serif;
+			font: .25em/0em "Futura","FuturaBT","Myriad Pro",Myriad,"PT Sans","Century Gothic",CenturyGothic,AppleGothic,"Helvetica Neue","Trebuchet MS",Arial,sans-serif;
 			font: .3em/0em "Tw Cen MT";
 			display: block;
 			margin: -8px auto 0 9em;
@@ -116,7 +116,7 @@
 
 						li{
 							margin: 3px 0;
-							font: 16px/1.3em sans-serif;
+							font: 16px/1.3em "Open Sans",sans-serif;
 							height: 55px;
 							width: 49%;
 							@media (max-width:430px){ width: 100%;}
@@ -172,7 +172,7 @@
 		}
 		 a{
 			text-decoration: none;
-			font: 1.25em/1.4em Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font: 1.25em/1.4em "Open Sans",Verdana, Geneva, Arial, Helvetica, sans-serif;
 			padding: 8px;
 			display: block;
 			color: #379;
@@ -191,7 +191,7 @@
 		@include border-radius(4px);
 		text-decoration: none;
 		color: #0f0f0f;
-		font: bold 18px/1.4em sans-serif;
+		font: bold 18px/1.4em "Open Sans", sans-serif;
 		text-align: center;
 		@include box-shadow(0 0 3px #0f0f0f);
 		z-index: 10;
@@ -260,7 +260,7 @@
 	width: 80%;
 	margin: 10px auto;
 	text-align: center;
-	font: 24px/1.5em "Tw Cen MT", "Century Gothic", Gotham, sans-serif;
+	font: 24px/1.5em "Tw Cen Mt","Futura","FuturaBT","Myriad Pro",Myriad,"PT Sans","Century Gothic",CenturyGothic,AppleGothic,"Helvetica Neue","Trebuchet MS",Arial,sans-serif;
 	span{
 		border-bottom: 3px dashed #c4c4c4;
 	}

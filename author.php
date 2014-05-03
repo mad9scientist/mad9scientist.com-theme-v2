@@ -39,10 +39,12 @@
 	</li>
 <?php endwhile; ?>
 </ol>
+
 <div class="pagination">
 	<?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
 	<?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
 </div>
+
 <?php else: ?>
 <h2>No posts to display for <?php echo get_the_author() ; ?></h2>	
 <?php endif; ?>

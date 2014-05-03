@@ -43,11 +43,12 @@
 	</li>
 <?php endwhile; ?>
 </ol>
-
+<?php if( next_posts_link() || previous_posts_link() ){ ?>
 <div class="pagination">
 	<?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
 	<?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
 </div>
+<?php } ?>
 
 <?php else: ?>
 <h2>Empty Archive</h2>	

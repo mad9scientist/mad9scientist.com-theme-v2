@@ -1,0 +1,31 @@
+// Custom Styles for My-Setup page: 
+.my-setup, .past-setups{
+	.apps{
+		li{
+			list-style: none;
+			display: inline-block;
+
+			margin: 8px;
+			width: 213px;
+			height: 80px;
+		}
+		a{
+			background: #eee;
+			@include border-radius(4px);
+			display: block;
+			height: 100%;
+			width: 100%;
+			font-size: 17px;
+			vertical-align: middle;
+			border: 0 none;
+			&:hover, &:active{
+				background: #cfcfcf;
+			}
+
+			img{
+				margin: 13px;
+				vertical-align: middle;
+			}
+		}
+	}
+}

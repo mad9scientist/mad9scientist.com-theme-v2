@@ -1,0 +1,45 @@
+body[class*="m9s_portfolio"]{
+
+	article{
+		margin-bottom: 2em;
+	}	
+
+	div.project{
+		display: block;
+		margin-left: 322px;
+	}
+
+	.project-type, .project-description{
+		font-weight: bold;
+		font-style: italic;
+		display: block;
+		border-bottom: 1px dotted #ccc;
+	}
+
+	.featureThumb img{
+		margin-top: 1em;
+	}
+
+	.feature-image-hdr{
+		width: 100%;
+		display: block;
+		border: 1px solid #005E9D;
+		border-bottom-width: 20px;
+		text-align: center;
+		padding:1em;
+	}
+	.feature-image{
+	
+	}
+}
+.post-type-archive-m9s_portfolio{
+	h1, h2{
+		border: 0 none;
+	}
+	
+}
+.single-m9s_portfolio {
+	h1{
+		border-bottom: 3px solid #005E9D;
+	}	
+}

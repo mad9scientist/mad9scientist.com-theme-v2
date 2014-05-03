@@ -109,12 +109,40 @@ function loadPage(url){
 
 	
 }
-$(".pagination .page-numbers").detach();
-$("<a href=''>More Articles</a>").appendTo(".pagination");
-$(".pagination a").click(function(e){
+if(window.location.pathname === '/'){
+	$(".pagination .page-numbers").detach();
+	$("<a href=''>More Articles</a>").appendTo(".pagination");
+	$(".pagination a").click(function(e){
+		e.preventDefault();
+		url = window.location.pathname;
+		loadPage(url);
+	});
+}
+
+// Basic Lightbox for gallery
+
+$('.gallery-item a').click(function(e){
 	e.preventDefault();
-	url = window.location.pathname;
-	loadPage(url);
+	var img_href = $(this).attr("href");
+
+	if($('#lightbox').length > 0){
+		$('#img_content').html('<img src="' + img_href + '" />');
+
+		$('#lightbox').show();
+	}else{
+		var lightbox = 
+			'<div id="lightbox">' +
+				'<div id="img_content">' +
+					'<img src="' + img_href + '" />' +
+				'</div>' +
+				'<p>Click to Close</p>' +
+			'</div>';
+
+		$('body').append(lightbox);
+	}
+	$('#lightbox').on('click', function() {
+	    $('#lightbox').hide();
+	});
 });
 
 

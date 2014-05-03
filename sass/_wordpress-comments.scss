@@ -1,11 +1,13 @@
 	#showComments{
 		width: 55%;
+		max-width: 700px;
 		display: inherit;
 		margin: 10px auto;
 	}
 
 .article-wrap + #comments{
 	width: 80%;
+	max-width: 1000px;
 	margin: 0 auto;
 	@media (max-width:945px){
 		width: 90%;
@@ -111,7 +113,7 @@
 					border-bottom: 1px dotted;
 				}
 			}
-			.feature-burry-comments{display:none;}
+			//.feature-burry-comments{display:none;}
 			.comment-reply-link{
 				@include border-radius(3px);
 				background: #F4F9FD;
@@ -176,7 +178,7 @@
 
 
 
-
+/*
 	.commentlist .reply {}
 	.commentlist .reply a {}
 
@@ -224,5 +226,6 @@
 
 	#cancel-comment-reply {}
 	#cancel-comment-reply a {}
+	*/
 
 }
