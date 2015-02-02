@@ -120,3 +120,8 @@
 	Custom Stuff
 
 	========================================================================================================================== */
+
+	## bio
+	if(false === ($value = get_transient('bio-ftlinks'))){
+		set_transient('bio-ftlinks', get_the_author_meta('description', 2), WEEK_IN_SECONDS * 2 );
+	}

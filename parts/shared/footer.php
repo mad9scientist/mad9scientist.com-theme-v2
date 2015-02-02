@@ -3,7 +3,12 @@
 	<div class="bio column">
 		<h5>About Me</h5>
 		<!-- <p>Chris Holbrook (aka Mad9Scientist) is a computer scientist that focuses on Web Development, Computer Support/Services, and Networking. Chris is also the Founder of Mad Scientist Technologies, a IT Solution Provider located in Quincy, Illinois. <a href="/about/">Read More &raquo;</a></p> -->
-		<p><?php echo the_author_meta('description',2) ?> <a href="/about/">Read More &raquo;</a></p>
+		<p>
+			<?php 
+				echo get_transient('bio-ftlinks');
+			?> 
+			<a href="/about/">Read More &raquo;</a>
+		</p>
 	</div>
 	<div class="ventures column">
 		<h5>My Ventures</h5>
@@ -14,13 +19,17 @@
 	<div class="socialSites column">
 		<h5>Other Digitally Homes</h5>
 		<ul>
-			<?php wp_list_bookmarks('category=3&title_li=&categorize=0'); ?>
+			<?php 
+				echo get_transient('socialmedia-ftlinks');
+			?>
 		</ul>
 	</div>
 	<div class="friends column">
 		<h5>Some of Great Places</h5>
 		<ul>
-			<?php wp_list_bookmarks('category=4&title_li=&categorize=0'); ?> 
+			<?php 
+				echo get_transient('shoutout-ftlinks');
+			?> 
 		</ul>
 	</div>
 	<div class="credits">
