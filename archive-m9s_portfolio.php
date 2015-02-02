@@ -27,10 +27,10 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'part
 			if(has_post_thumbnail()){
 				echo "<div class=\"project\">";
 			}
-			$projectType = get_post_custom($post->ID);
+			$custom = get_post_custom($post->ID);
 
-			if($projectType['ProjectType'][0] !== null){
-				echo "<span class=\"project-type\">Project Type</span> <p>". $projectType['ProjectType'][0] ."</p>";
+			if($custom['m9s_project_type'][0] !== null){
+				echo "<span class=\"project-type\">Project Type</span> <p>". $custom['m9s_project_type'][0] ."</p>";
 			}
 			echo "<span class=\"project-description\">Project Description</span>";
 			the_excerpt(); 
