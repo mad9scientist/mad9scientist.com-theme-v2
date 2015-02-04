@@ -34,5 +34,12 @@
 	</nav>
 </header>
 
-<aside class="Intro">The Random <span class="what">Thoughts</span> of a <span class="who">Developer</span></aside>
+<aside class="Intro">
+	The Random 
+	<div class="what">
+		<span>Thoughts</span>
+	</div> of a <div class="who">
+	 	<span>Developer</span>
+	 </div>
+</aside>
 	

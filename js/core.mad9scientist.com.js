@@ -30,7 +30,7 @@ function IntroLine(){
 		"Very Odd Human Being"
 	];
 
-	var whatLen = whatWords.length; 
+	var whatLen = whatWords.length;
 	var whoLen = whoWords.length;
 
 
@@ -41,8 +41,8 @@ function IntroLine(){
 		return array[i];
 	}
 
-	$(".who").html(pickWord(whoWords, whoLen));
-	$(".what").html(pickWord(whatWords, whatLen));
+	$(".who").html("<span>"+pickWord(whoWords, whoLen)+"</span>");
+	$(".what").html("<span>"+pickWord(whatWords, whatLen)+"</span>");
 	
 }
 
@@ -51,7 +51,7 @@ setInterval(IntroLine, 10000); // Change Introduction Line Changes every 10 seco
 // Mobile Menu Prototype 2
 $(".controller").click(function(){
         $(".menuContents").slideToggle(200);
- }); 
+ });
 
 // Toggle Comments/Repond Content on Article Pages
 var commentSection = $("#comments");

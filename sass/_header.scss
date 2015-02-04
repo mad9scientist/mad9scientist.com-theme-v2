@@ -261,8 +261,17 @@
 	margin: 10px auto;
 	text-align: center;
 	font: 24px/1.5em "Tw Cen Mt","Futura","FuturaBT","Myriad Pro",Myriad,"PT Sans","Century Gothic",CenturyGothic,AppleGothic,"Helvetica Neue","Trebuchet MS",Arial,sans-serif;
-	span{
+	.what, .who{
+		font: 24px/1.5em 'Shadows Into Light', cursive;
 		border-bottom: 3px dashed #c4c4c4;
+		display: inline;
+		span{
+			transition: none;
+			display: inline-block;
+			animation: introScale 1.5s;
+			backface-visibility: visible;
+
+		}
 	}
 }
 @media (max-width:785px){

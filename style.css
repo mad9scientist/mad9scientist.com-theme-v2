@@ -580,8 +580,15 @@ table {
     margin: 10px auto;
     text-align: center;
     font: 24px/1.5em "Tw Cen Mt","Futura","FuturaBT","Myriad Pro",Myriad,"PT Sans","Century Gothic",CenturyGothic,AppleGothic,"Helvetica Neue","Trebuchet MS",Arial,sans-serif; }
-    .Intro span {
-      border-bottom: 3px dashed #c4c4c4; } }
+    .Intro .what, .Intro .who {
+      font: 24px/1.5em 'Shadows Into Light', cursive;
+      border-bottom: 3px dashed #c4c4c4;
+      display: inline; }
+      .Intro .what span, .Intro .who span {
+        transition: none;
+        display: inline-block;
+        animation: introScale 1.5s;
+        backface-visibility: visible; } }
 @media screen and (max-width: 785px) {
   .no-svg nav .controller {
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeF5jQAP/////g5sAAXroAACPkEeDsgLk1QAAAABJRU5ErkJggg==") 10px 5px no-repeat #1e1e1e;
@@ -1505,6 +1512,25 @@ table {
     font-weight: bold; }
 
   .token.entity {
-    cursor: help; } }
+    cursor: help; }
+
+  @keyframes introScale {
+    0% {
+      opacity: 0;
+      transform: scale(0) rotateY(120deg); }
+    25% {
+      opacity: 1; } }
+  @keyframes introDrop1 {
+    0% {
+      height: 0px;
+      opacity: 0;
+      transform: perspective(400px) rotateX(130deg); }
+    50% {
+      transform: perspective(50px) rotateX(-50deg); }
+    75% {
+      transform: perspective(100px) rotateX(50deg); }
+    100% {
+      opacity: 1;
+      transform: perspective(400px) rotateX(0deg); } } }
 
 /*# sourceMappingURL=style.css.map */
