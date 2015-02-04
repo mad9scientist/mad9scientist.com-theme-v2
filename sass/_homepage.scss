@@ -17,7 +17,7 @@
 				margin: 0 auto;
 				//margin: 0 46%;
 				color: lighten(#D6E0EA,7%);
-				@include text-shadow(0 -1px 1px lighten(#D6E0EA, 1%));
+				text-shadow: 0 -1px 1px lighten(#D6E0EA, 1%);
 			}
 	}
 
@@ -60,11 +60,11 @@
 			padding:8px;
 			font-size: 1.2em;
 			background: darken(#D6E0EA, 45%);
-			@include border-radius(5px);
-			@include box-shadow(0 1px 1px #1e1e1e);
-			@include text-shadow(0 -1px 0 #1e1e1e);
+			border-radius: 5px;
+			box-shadow: 0 1px 1px #1e1e1e;
+			text-shadow: 0 -1px 0 #1e1e1e;
 			&:hover, &:active{
-				@include box-shadow(0 0 5px #1e1e1e inset, 0 0 2px #1e1e1e);
+				box-shadow: 0 0 5px #1e1e1e inset, 0 0 2px #1e1e1e;
 				background: darken(#D6E0EA, 35%);
 			}
 		}

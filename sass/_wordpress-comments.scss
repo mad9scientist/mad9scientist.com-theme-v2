@@ -51,11 +51,11 @@
 				right: 0px;
 				@media (min-width:451px){
 					top: 0px;
-					@include border-radius(0 5px);
+					border-radius: 0 5px;
 				}
 				@media (max-width:450px){
 					bottom: 0px;
-					@include border-radius(5px 0px);
+					border-radius: 5px 0px;
 				}
 				a{
 					text-decoration: none;
@@ -84,7 +84,7 @@
 			}
 			
 			 img{
-				@include border-radius(50px);
+				border-radius: 50px;
 				box-shadow: 0 0 2px #369;
 			}
 		}
@@ -115,7 +115,7 @@
 			}
 			//.feature-burry-comments{display:none;}
 			.comment-reply-link{
-				@include border-radius(3px);
+				border-radius: 3px;
 				background: #F4F9FD;
 				display: inline-block;
 				padding: 8px 25px;
@@ -159,7 +159,7 @@
 		}
 	}
 	.end-of-discussion{
-		@include border-radius(3px);
+		border-radius: 3px;
 		border: 2px double #537EA9;
 		font: italic 1.3em/1.5em "Tw Cen MT", "Century Gothic", Gotham, sans-serif;
 		padding: 5px;

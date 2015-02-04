@@ -12,7 +12,7 @@
 		margin: 0 auto;
 		display: table;
 		color: lighten(#D6E0EA,5%);
-		@include text-shadow(0 -1px 1px lighten(#D6E0EA, 1%));
+		text-shadow: 0 -1px 1px lighten(#D6E0EA, 1%);
 	}
 	font-size: 1.3em;
 	@media (max-width:420px){

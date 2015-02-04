@@ -3,7 +3,7 @@
 	width: 300px;
 	display: block;
 	padding: 0.7em;
-	@include box-shadow(0 0 2px 1px #0076C4);
+	box-shadow: 0 0 2px 1px #0076C4;
 	border: 0 none;
 	background: #fff;
 	float: left;

@@ -43,7 +43,7 @@ blockquote{
 		&:hover{
 			background: #369;
 			color: #fff;
-			@include border-radius(10px);
+			border-radius: 10px;
 		}
 	}
 }
@@ -63,7 +63,7 @@ blockquote{
 table{
 	width: 98%;
 	margin: 0 auto 25px;
-	@include border-radius(4px);
+	border-radius: 4px;
 	th, td{
 	    border: 1px solid #CCCCCC;
 	    padding: 5px;	
