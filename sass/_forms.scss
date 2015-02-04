@@ -4,18 +4,18 @@
 	color: #fff;
 	padding: 8px 20px;
 	margin: 8px 0;
-	@include border-radius(5px);
-	@include box-shadow(0 0 2px #1f1f1f);
+	border-radius: 5px;
+	box-shadow: 0 0 2px #1f1f1f;
 
 	&:hover{
 		background: lighten(#369, 15%);
-		@include box-shadow(0 1px 1px #fff inset);
-		@include text-shadow(0 1px 0px #000);
+		box-shadow: 0 1px 1px #fff inset;
+		text-shadow: 0 1px 0px #000;
 	}
 }
 textarea, input{
 	border: 1px solid #369;
-	@include border-radius(3px);
+	border-radius: 3px;
 	padding: 5px;
 	color: #1f1f1f;
 }
@@ -23,7 +23,7 @@ textarea, input{
 pre{
 	background: #252525;
 	padding: 0.2em 0.4em;
-	@include border-radius(8px);
+	border-radius: 8px;
 	code{
 		color: #A9D3FF;
 	}

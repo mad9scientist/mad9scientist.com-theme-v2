@@ -131,7 +131,7 @@
 
 								&:hover, &:active{
 									background: #333;
-									@include border-radius(5px);
+									border-radius: 5px;
 								}
 							}
 						}
@@ -151,8 +151,8 @@
 			background:#D9EBF6;
 			background: rgba(255,255,255, 0.8);
 			margin: auto 4px;
-			@include border-radius(5px);
-			@include box-shadow(0 0 2px #0f0f0f);
+			border-radius: 5px;
+			box-shadow: 0 0 2px #0f0f0f;
 			@media (max-width:785px){
 				background: none;
 			}
@@ -161,7 +161,7 @@
 				background: #F2F8FC;
 				background: rgba(255,255,255, 0.95);
 				border: 0 none;
-				@include box-shadow(0 0 3px #0f0f0f);
+				box-shadow: 0 0 3px #0f0f0f;
 				-webkit-transition: all 0.3s;
 				-moz-transition: all 0.3s;
 				-o-transition: all 0.3s;
@@ -188,12 +188,12 @@
 		top: -90px;
 		left: -36px;
 		padding: 15px 15px;
-		@include border-radius(4px);
+		border-radius: 4px;
 		text-decoration: none;
 		color: #0f0f0f;
 		font: bold 18px/1.4em "Open Sans", sans-serif;
 		text-align: center;
-		@include box-shadow(0 0 3px #0f0f0f);
+		box-shadow: 0 0 3px #0f0f0f;
 		z-index: 10;
 
 		-webkit-transform: rotate(-16deg);
@@ -284,8 +284,8 @@
 		background: #F2F8FC;
 		background: rgba(255,255,255, 0.95);
 		border: 0 none;
-		@include box-shadow(0 0 3px #0f0f0f);
-		@include border-radius(5px);
+		box-shadow: 0 0 3px #0f0f0f;
+		border-radius: 5px;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;

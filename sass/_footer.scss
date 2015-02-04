@@ -62,7 +62,7 @@ footer{
 				width: 20px;
 				margin: 0 50%;
 				color: lighten(#D6E0EA,5%);
-				@include text-shadow(0 -1px 1px lighten(#D6E0EA, 1%));
+				text-shadow: 0 -1px 1px lighten(#D6E0EA, 1%);
 			}
 		}
 
@@ -73,10 +73,10 @@ footer{
 			height: 40px;
 			@extend .ir;
 			margin: 5px 0;
-			@include border-radius(4px);
-			@include box-shadow(0 0 2px #bbb, 0 0 0 1px #888 inset);
+			border-radius: 4px;
+			box-shadow: 0 0 2px #bbb, 0 0 0 1px #888 inset;
 			&:hover{
-				@include box-shadow(0 0 2px #0f0f0f);
+				box-shadow: 0 0 2px #0f0f0f;
 			}
 		}
 		.mst{
