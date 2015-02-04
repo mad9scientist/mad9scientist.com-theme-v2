@@ -26,7 +26,7 @@
 			<ul>
 				<li><a href="/" class="index">Stuff I Wrote</a></li>
 				<li><a href="/portfolio/" class="portfolio">My Work</a></li>
-				<li><a href="/concepts/" class="concepts">Code &amp; Concepts</a></li>
+				<li><a href="/projects/" class="projects">Projects &amp; Code</a></li>
 				<li><a href="/contact/" class="contact">Reach Out</a></li>
 				<li><a href="/about/" class="about">Who?</a></li>
 			</ul>

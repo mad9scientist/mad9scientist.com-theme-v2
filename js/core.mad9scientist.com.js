@@ -77,24 +77,29 @@ $('#comment').keydown(function (e) {
 // Hide No Javascript Alert
 $("#js-required").detach();
 
+// Close Old IE Alert
+$('.chromeframe').on('click', function(){
+	$(this).detach();
+});
+
 // Load next page dynamically
 function loadPage(url){
 	var url, p, page, response, status, xhr
 
 	//url = window.location.pathname;
-	if(/page\/\d+/.test(url)){
-		page = parseInt(url.match(/\d+/)[0]);	
+	if( /page\/\d+/.test(url) ){
+		page = parseInt(url.match(/\d+/)[0]);
 		page = page + 1;
 	}
 	if(url === "/"){
 		page = 2;
 	}
 
-	if(page != undefined || url === "/"){
+	if(page !== undefined || url === "/"){
 		$("#nextpage").load('/page/'+page+'/ .feed article', function(response, status, xhr){
 			if(xhr.status != 404 && status === "error") {
-				$("<p class='pagination'>Error, I'm unable to load more articles. Please try again later.</p>").appendTo("#nextpage");	
-			} else if(xhr.status === 404){
+				$("<p class='pagination'>Error, I'm unable to load more articles. Please try again later.</p>").appendTo("#nextpage");
+					} else if(xhr.status === 404){
 				$(".pagination").fadeOut();
 				$('<p class="pagination">No more articles to load :(</p>').appendTo("#nextpage");
 			}
@@ -103,7 +108,7 @@ function loadPage(url){
 			}else{
 				urlHistory = page;
 			}
-			history.pushState(history.state, null, urlHistory);;
+			history.pushState(history.state, null, urlHistory);
 		});
 	}
 
@@ -130,8 +135,7 @@ $('.gallery-item a').click(function(e){
 
 		$('#lightbox').show();
 	}else{
-		var lightbox = 
-			'<div id="lightbox">' +
+		var lightbox = '<div id="lightbox">' +
 				'<div id="img_content">' +
 					'<img src="' + img_href + '" />' +
 				'</div>' +
@@ -141,7 +145,7 @@ $('.gallery-item a').click(function(e){
 		$('body').append(lightbox);
 	}
 	$('#lightbox').on('click', function() {
-	    $('#lightbox').hide();
+		$('#lightbox').hide();
 	});
 });
 

@@ -287,7 +287,9 @@
 @media (min-width:785px){
 	.home nav .index, 
 	.post-type-archive-m9s_portfolio nav .portfolio, 
-	.concepts nav .concepts, 
+	.concepts nav .concepts,
+	.post-type-archive-m9s_projects nav .projects,
+	.single-m9s_projects nav .projects,
 	.contact nav .contact, 
 	.about nav .about{
 		background: #F2F8FC;
