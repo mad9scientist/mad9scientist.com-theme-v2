@@ -84,7 +84,7 @@ $('.chromeframe').on('click', function(){
 
 // Load next page dynamically
 function loadPage(url){
-	var url, p, page, response, status, xhr
+	var url, p, page, response, status, xhr;
 
 	//url = window.location.pathname;
 	if( /page\/\d+/.test(url) ){
