@@ -2,7 +2,6 @@
 	<footer>
 	<div class="bio column">
 		<h5>About Me</h5>
-		<!-- <p>Chris Holbrook (aka Mad9Scientist) is a computer scientist that focuses on Web Development, Computer Support/Services, and Networking. Chris is also the Founder of Mad Scientist Technologies, a IT Solution Provider located in Quincy, Illinois. <a href="/about/">Read More &raquo;</a></p> -->
 		<p>
 			<?php 
 				echo get_transient('bio-ftlinks');
