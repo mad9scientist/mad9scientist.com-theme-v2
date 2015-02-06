@@ -13,5 +13,13 @@
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
 		
 		<?php wp_head(); ?>
+		<!--[if lt IE 9]>
+			<meta http-equiv="refresh" content="0; url=/ie6.php" />
+			<script type="text/javascript">
+			/* <![CDATA[ */
+			window.top.location = '/ie6.php';
+			/* ]]> */
+			</script>
+	  <![endif]-->
 	</head>
 	<body <?php body_class(); ?>>
