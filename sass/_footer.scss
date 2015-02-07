@@ -7,6 +7,9 @@ footer{
 	border-bottom: 2px solid rgba(51,102,153,0.8);
 	background: #D6E0EA;
 	background: rgba(51,102,153,0.2);
+	@media (max-width:1000px){
+		padding: 0;
+	}
 
 	position: relative;
 		&:after{
