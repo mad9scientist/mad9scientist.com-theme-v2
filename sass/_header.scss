@@ -223,7 +223,7 @@
 			transform: rotate(6deg);
 		}
 		@media (max-width:420px){
-			-moz-transform: rotate(0deg);
+			transform: rotate(0deg);
 			top:-97px;
 		}
 	}

@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	autoprefixer = require('gulp-autoprefixer'),
+	sourcemap = require('gulp-sourcemaps'),
 	sass = require('gulp-ruby-sass');
 
 gulp.task('sass', function(){
@@ -13,7 +14,7 @@ gulp.task('sass', function(){
 gulp.task('prefix', function(){
 	return gulp.src('.gulp-cache/style.css')
 				.pipe(autoprefixer({
-					browsers: ['> 1%', 'last 3 versions', 'Firefox ESR', 'Opera 12.1']
+					browsers: ['> 1%', 'last 3 versions', 'Firefox ESR', 'Opera 12.1', 'ie 9']					
 				}))
 				.pipe(gulp.dest('./'));
 });
