@@ -1,4 +1,4 @@
-/* 	Changing the Intro Line
+/*	Changing the Intro Line
 	Changes the words Thoughts and Developer in the original sentence to the following words
 
 	Thoughts (.what)
@@ -59,7 +59,7 @@ var commentURL = $(location).attr('hash');
 
 //if(commentURL != "#respond" || commentURL.match('#comment-')){
 if(commentURL === ""){
-	$(commentSection).before("<button id='showComments' class='button'>Show Comments</button>")
+	$(commentSection).before("<button id='showComments' class='button'>Show Comments</button>");
 	$("#comments").hide();
 }
 $("#showComments").click(function(){
@@ -84,11 +84,11 @@ $('.chromeframe').on('click', function(){
 
 // Load next page dynamically
 function loadPage(url){
-	var url, p, page, response, status, xhr;
+	var p, page, response, status, xhr;
 
 	//url = window.location.pathname;
 	if( /page\/\d+/.test(url) ){
-		page = parseInt(url.match(/\d+/)[0]);
+		page = parseInt(url.match(/\d+/)[0], 10);
 		page = page + 1;
 	}
 	if(url === "/"){
