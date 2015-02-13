@@ -1,7 +1,7 @@
 
 	<?php wp_footer(); ?>
 
-	<!--[if IE lte 8]>
+	<!--[if lte IE 8]>
 	<script src="<?php echo get_stylesheet_directory_uri().'/js/vendor/respond.min.js';?>"></script>
 	<![endif]-->
 

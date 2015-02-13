@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
 		
 		<?php wp_head(); ?>
-		<!--[if lt IE 9]>
+		<!--[if lt IE 8]>
 			<meta http-equiv="refresh" content="0; url=/ie6.php" />
 			<script type="text/javascript">
 			/* <![CDATA[ */
