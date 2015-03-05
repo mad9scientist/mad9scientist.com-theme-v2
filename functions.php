@@ -63,8 +63,8 @@
 	 */
 
 	function starkers_script_enqueuer() {
-		wp_register_script('modernizr', get_stylesheet_directory_uri().'/js/vendor/modernizr.min.js',false,null);
-        wp_enqueue_script('modernizr');
+		//wp_register_script('modernizr', get_stylesheet_directory_uri().'/js/vendor/modernizr.min.js',false,null);
+        //wp_enqueue_script('modernizr');
 
         wp_register_style('google_typeface', '//fonts.googleapis.com/css?family=Shadows+Into+Light|PT+Sans|Ubuntu|Open+Sans:400,700,400italic,700italic', '', '', 'all');
         wp_enqueue_style( 'google_typeface' );
