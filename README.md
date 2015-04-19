@@ -1,8 +1,7 @@
-# Mad9Scientist.com - WordPress Theme: Version 2.0
+## Mad9Scientist.com - WordPress Theme: Version 2.0
 
-Based upon the [Starkers Blank Theme](http://viewportindustries.com/products/starkers/).
-
-Author: Chris Holbrook [Mad9Scientist](http://mad9scientist.com)
+Based upon the [Starkers Blank Theme](https://github.com/viewportindustries/starkers)  
+Author: Chris Holbrook [Mad9Scientist](http://mad9scientist.com)  
 
 License: 
 * Mad Scientist Technologies [Trademark](http://madscitech.com/about/trademarks/) and [Content](http://madscitech.com/about/license/) License (Images and Design)
@@ -12,12 +11,13 @@ This theme is customize to my particular need and is a work in progress, this th
 
 Design and Images: Copyright Mad Scientist Technologies & Chris Holbrook
 
-##Licensing
+###Licensing
 
-This item is released under the following license:
+This item is released under the following licenses:
 
-	* Mad Scientist Technologies Trademark and Content Licenses (Images, Content, and Design)
-	* BSD License (Code and Bugs)
+* Mad Scientist Technologies Trademark and Content Licenses (Images, Content, and Design)
+* BSD License (Code and Bugs)
+* GNU Public License v2 - Starkers Blank Theme Base
 
 
 The Licenses listed above, in the order listed controls the use of this item.
