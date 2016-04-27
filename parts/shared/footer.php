@@ -35,7 +35,7 @@
 				Proudly Powered by 
 				<a href="http://www.wordpress.org/" title="WordPress Platform">WordPress</a>
 				 and 
-				<a href="http://mdtm.pl/1kIpnmN" title="Buy some Hosting from MediaTemple!">(mt) MediaTemple</a>.
+				<a href="https://m.do.co/c/864d7de73338" title="Get your own VPS for free! Get $10 in credit, just for signing up.">Digital Ocean</a>.
 			</div>
 			<div class="copyleft">
 				Copyright <?=date('Y')?> Christopher A Holbrook. Most Rights Reserved. <a href="https://github.com/mad9scientist/mad9scientist.com-theme-v2/issues" title="Report an issue on GitHub">Report a Bug</a> &bull; <a href="/about/legal/" title="The super complex legal agreement between you and me.">Legal?</a>
