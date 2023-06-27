@@ -6,12 +6,12 @@
 	<![endif]-->
 
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FWGRMHHN7P"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LHSJ87ZZ"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'G-FWGRMHHN7P');
+		gtag('config', 'G-H9LHSJ87ZZ');
 	</script>
 
 	<!-- Google Analytics (Old Remove Sept 2023) -->
