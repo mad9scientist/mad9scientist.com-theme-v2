@@ -23,7 +23,7 @@ function IntroLine(){
 	];
 	var whoWords = [
 		"Developer",
-		"Mad Man",
+		"Mad One",
 		"Scientist",
 		"Technologist",
 		"Individual",
