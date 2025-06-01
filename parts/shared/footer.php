@@ -10,9 +10,9 @@
 		</div>
 		<div class="ventures column">
 			<h5>My Ventures</h5>
-			<a href="//madscitech.com" class="mst">Mad Scientist Technologies</a>
-			<a href="//staticookie.com" class="sc">StatiCookie</a>
-			<a href="//jzscottmedia.com" class="jzsm">JZ Scott Media Production</a>
+			<a href="//madscitech.com" class="mst" title="Technology Simplified">Mad Scientist Technologies</a>
+			<a href="//www.staticookie.com" class="sc" title="CDN Service">StatiCookie</a>
+			<a href="//www.jzscottmedia.com" class="jzsm" title="Making Dreams into Art">JZ Scott Media Production</a>
 		</div>
 		<div class="socialSites column">
 			<h5>Other Digitally Homes</h5>
