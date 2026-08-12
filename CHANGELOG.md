@@ -10,7 +10,7 @@
 * Removed License File
 * Added License File
 
-## verver <= 2.1
+## Versions < 2.1
 
 {History lost, review git history for details}
 
