@@ -1,0 +1,97 @@
+# TODO for Theme
+
+Updated: 2026-Aug-11 (formatting)
+
+## Setup New Post Type for
+
+* Projects CPT
+  * Work on Single and Archive Pages - NEED STYLING
+  * Change Current Page solution to new CPT
+  * Change current directory setup for projects from
+       mad9scientist.com/projects/%name% to concepts.mad9scientist.com/%name%
+       The current setup now will conflict with the new CPT
+
+* Portfolio CPT
+  * Work on Single and Archive Pages - NEED STYLING
+    * Need to pull in Custom Image on to Archive Page
+  * Single Page need work
+
+Style and setup archive
+
+* Stuff I Wrote
+
+Social Icon Credit
+<http://simpleicons.org/>
+
+Possibly Change to Font Awesome for Icons
+
+Live Changes
+
+* Links
+  * Project and Concept Redirects required
+
+## Page TODO
+
+* Write Job page
+* Create Social Media Link Pages
+  * Create a Template for future use | DONE
+
+## Pre Launch Checklist
+
+* Update Local Database to Current Version
+* Test Current Content
+* Post Test Content
+  * Link Post
+  * "Article" Post
+  * Project Item
+  * Portfolio Item
+* Fix Bugs
+* Minify JS/CSS/Images
+* Git Push to BitBucket/GitHub
+* Setup Git Pull to Server
+* Deploy to Server
+* Test Theme in Theme Split (Plugin Function)
+* Create/Move Content to New Post Types (if needed)
+* Deploy Theme Publicly
+* Kill Theme Switcher Plugin
+* Check for New Bugs/Fix/Push/Deploy
+* Write Announcement
+
+## Completed
+
+### Comments
+
+DONE | Fix reply to be ajax like normal - Wasn't Ajax
+
+### WordPress
+
+Get New SEO Plugin working - Yoast's SEO Plugin - Currently Experimenting
+
+DONE | Finish Page and Single Page Template
+
+* DONE | No Comment Page
+* DONE | Redirect Template Body of page is link and that page just redirect to new address
+
+DONE | Clean up Header Junk
+
+* Links Post, current setup as a page template
+ Change to Custom Post Type | DONE
+
+Get Portfolio Setup | Done
+Get Project Directory Setup | DONE
+
+* Projects | Done
+  * Development project, concepts and apps - NEED STYLING
+
+* Portfolio | Done
+  * Client Work and other things
+
+## Footer | DONE
+
+Setup Footer to pull in social links dynamically from WP backend
+
+## Homepage/Feed
+
+Create function to pull more stories/links to page from the pagination
+AKA get "More Article" Link working
+[x] Created a Preliminarily Version
