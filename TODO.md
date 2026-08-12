@@ -2,6 +2,11 @@
 
 Updated: 2026-Aug-11 (formatting)
 
+## Future Changes
+
+* Fixed icon at the end of article/link posts on homepage (get it out of the box)
+  * SASS Build
+
 ## Setup New Post Type for
 
 * Projects CPT
